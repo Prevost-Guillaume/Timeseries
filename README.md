@@ -35,6 +35,7 @@ For these examples, we took AirPassengers data (data can be found on this reposi
 show_data_pip = Pipeline(PlotSerie(label='data'), ShowPlot(title='input timeserie'))
 output = show_data_pip.fit(data)
 ```  
+![data](images/data.png)
 <br/><br/>
 **Plot normalized data**  
 ```
@@ -45,6 +46,7 @@ normalize = Pipeline(FindSeasons(maxseasons=1),
                      ShowPlot(title='normalized serie'))
 output = normalize.fit(data)
 ```  
+![normalized](images/normalized.png)
 <br/><br/>
 **Plot detected anomalies**  
 ```
@@ -57,6 +59,7 @@ anomaly = Pipeline(normalize,
                    )
 output = anomaly.fit(data)
 ```  
+![anomaly](images/anomaly.png)
 <br/><br/>
 **Forecast timeserie**  
 ```
@@ -71,6 +74,7 @@ predpip = Pipeline(FindSeasons(maxseasons=1),
                    )
 output = predpip.fit(data)
 ```  
+![forecasting](images/forecasting.png)
 
 <br/><br/><br/>
 
