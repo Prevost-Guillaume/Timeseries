@@ -65,9 +65,9 @@ output = anomaly.fit(data)
 ```
 predpip = Pipeline(FindSeasons(maxseasons=1),
                    PlotSerie('data'),
-                   PredictTrend(n=100, degree=1),
-                   PredictVariance(n=100, degree=1),
-                   PredictSeason(n=100),
+                   PredictTrend(n=50, degree=1),
+                   PredictVariance(n=50, degree=1),
+                   PredictSeason(n=50),
                    MergePredictions(),
                    PlotSerie('prediction'),
                    ShowPlot()
