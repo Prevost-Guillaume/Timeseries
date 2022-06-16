@@ -1,5 +1,5 @@
 # Timeseries
-Pipeline system that allows several successive operations to be performed in a series.
+Pipeline system that allows several successive operations to be performed on a series.
 <br/>
 <br/>
 <br/>
